@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Helvetica;
+    background-color: var(--cor-1);
+    max-width: 900px;
+    text-align: center;
+}
+
+:root {
+    --cor-1: #FFF2AD;
+    --cor-2: #f5db59;
+    --cor-3: #80b494;
+    --cor-4: #547762;
+}
+
+#cabecalho nav li { /* deixar o menu na horizontal */
+    display: inline-block;
+}
+
+#cabecalho nav li a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#banners {
+    padding-top: 80px;
+}
+
+h1 {
+    background-color: var(--cor-2);
+}
+
+#sobre p{
+    padding: 30px;
+}
+
+#especies ul {
+    padding: 5px;
+}
+
+#especies img{
+    max-width: 500px;
+    display: block;
+}
+
+#mel p{
+    padding: 30px;
+}
+
+#galeria {
+    padding: 50px 0;
+}
+
+#galeria ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#galeria ul li {
+    list-style: none;
+}
+
+#galeria ul li img {
+    display: block;
+    width: 100%;
+    transition: all 0.3s linear;
+}
+
+#galeria ul li img:hover {
+    transform: scale(0.9);
+}
+
+
+.titulo {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#rodape p{
+    background-color: var(--cor-2);
+    padding: 10px;
+    text-align: center;
+}
+
+#menu ul {
+    margin: 0;
+    padding:0;
+}
+ 
+#menu li {
+    list-style: none; 
+    margin: 10px;
+    display: inline;
+}
+#menu li a {
+    padding: 5px;
+    margin:0;
+    border: 0px solid var(--cor-2); 
+    background: var(--cor-3);
+    text-decoration: none;
+    color:#FFF;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+#menu li a:hover {
+    background: var(--cor-4);
+}

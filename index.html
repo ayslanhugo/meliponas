@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meliponíneos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="plugins/jquery.bxslider.css">
+    <link rel="stylesheet" href="plugins/magnific.popup.css">
+
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/jquery.bxslider.min.js"></script>
+    <script src="plugins/magnific.popup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#especies').bxSlider({
+                mode: 'fade',
+                speed: '300',
+                auto: true,
+                pager: false
+            });
+
+            $('#galeria').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true
+
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <header id="cabecalho">
+        <img src="imagens/abelha.png" alt="abelha">
+        <h1 class="titulo">Meliponíneos</h1>
+        <nav id="menu">
+            <ul>
+                <li><a href="#cabecalho">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#mel">Mel</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+            </ul>
+            <ul> 
+                <li><a href="/jatai.html">Jatai</a></li>
+                <li><a href="/mandacaia.html">Mandaçaia</a></li>
+                <li><a href="/urucu.html">Uruçu Nordestina</a></li>
+                <li><a href="/bugia.html">Bugia</a></li>
+                <li><a href="/bora.html">Borá</a></li>
+
+            </ul>
+            
+        </nav>
+    </header>
+
+
+    <div id="sobre">
+        <h1 class="titulo">O que são?</h1>
+            <p>Os meliponíneos, ou abelhas sem ferrão constituem um grupo de abelhas formado por mais de 300 espécies conhecidas em todo o mundo. Elas caracterizam-se por serem sociais e possuírem o ferrão atrofiado impossibilitando o seu uso. Aliás, essa é a razão pela qual são popularmente chamadas de abelhas sem ferrão. Os meliponíneos possuem uma grande importância no ecossistema brasileiro. Essas abelhas são os principais responsáveis pela polinização da grande maioria das espécies vegetais do nosso país. Além disso, seus produtos (mel, geoprópolis, etc.) são utilizados pela população rural como medicamentos e existe uma forte cultura popular do seu criatório e da apreciação de seus produtos</p>
+    </div>
+
+    <div class="container">
+        <ul id="especies">
+            <li><img src="imagens/abelha-jatai.jpg" alt="Banner 01"></li>
+            <li><img src="imagens/abelha-mandacaia.jpg" alt="Banner 02"></li>
+            <li><img src="imagens/abelha-rainha.jpg" alt="Banner 03"></li>
+        </ul>
+    </div>
+
+
+    <div id="mel">
+        <h1 class="titulo">Elas produzem mel?</h1>
+        <p>O primeiro aspecto que chama a atenção na produção de mel de abelhas sem ferrão é o preço. Enquanto o produto convencional “fabricado” pela abelha com ferrão custa R$ 30 o quilo, o mel das abelhas nativas custa R$ 120 o quilo. Um dos motivos é que as abelhas sem ferrão, por serem menores em tamanho e/ou número de indivíduos por colmeia, produzem menos mel. Enquanto uma “família” com ferrão produz em média entre 25 kg a 30 kg por ano, as sem ferrão (dependendo da espécie) chegam no máximo a 1,5 kg por ano.</p>
+    </div>
+
+
+    <section id="galeria">
+        <h1 class="titulo">Veja algumas fotos</h1>
+        <div class="container">
+            
+            <ul id="fotos">
+                <li> <a href="imagens/abelha-bumblebee.jpg"><img src="imagens/abelha-bumblebee.jpg" alt="abelha Bumblebee"></a></li>
+
+                <li><a href="imagens/abelha-euglosa.jpg"><img src="imagens/abelha-euglosa.jpg" alt="abelha Euglosa"></a></li>
+
+                <li><a href="imagens/abelha-jatai.jpg"><img src="imagens/abelha-jatai.jpg" alt="abelha Jatai"></a></li>
+
+                <li><a href="imagens/abelha-mandacaia.jpg"><img src="imagens/abelha-mandacaia.jpg" alt="Abelha Mandaçaia"></a></li>
+
+                <li><a href="imagens/entrada 2.jpeg"><img src="imagens/entrada 2.jpeg"alt="Foto da Entrada"></a></li>
+
+                <li><a href="imagens/entrada da colmeia com guardas.jpeg"><img src="imagens/entrada da colmeia com guardas.jpeg"alt="Foto da Entrada"></a></li>
+
+                <li><a href="imagens/potes de mel.jpeg"><img src="imagens/potes de mel.jpeg"alt="potes"></a></li>
+
+                <li><a href="imagens/discos prontos para postura.jpeg"><img src="imagens/discos prontos para postura.jpeg" alt="Discos de postura"></a></li>
+
+            </ul>
+        </div>
+    </section>
+
+
+    <footer id="rodape">
+        <div class="container">
+
+            <p>UniRios - Centro Universitário do Rio São Francisco</p>
+
+
+            <p>Site construído na aula da disciplina de Introdução à Tecnologia à Tecnologia Web</p>
+
+            <p>Curso Sistema de Informação</p>
+
+            <p>1º périodo - Semestre 2022.2</p>
+
+            <p>Aluno: Ayslan Hugo Lucio dos Santos</p>
+
+        </div>
+    </footer>
+
+
+</body>
+</html>

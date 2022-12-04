@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meliponíneos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="plugins/jquery.bxslider.css">
+
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#especies').bxSlider({
+                mode: 'fade',
+                speed: '300',
+                auto: true,
+                pager: false
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <header id="cabecalho">
+        <img src="imagens/abelha.png" alt="abelha">
+        <h1 class="titulo">Meliponíneos</h1>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+            <ul>
+                <li><a href="/jatai.html">Jatai</a></li>
+                <li><a href="/mandacaia.html">Mandaçaia</a></li>
+                <li><a href="/urucu.html">Uruçu Nordestina</a></li>
+                <li><a href="/bugia.html">Bugia</a></li>
+                <li><a href="/bora.html">Borá</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="abelha">
+        <h1 class="titulo">Uruçu Nordestina</h1>
+        
+            <p>A abelha Uruçu Nordestina é uma das espécies nativas do Brasil, onde a criação dela já era feita pelos povos indígenas.</p> 
+            <br>
+            <p>São encontradas nas regiões mais quentes e úmidas do nosso país que inclui a Zona da Mata do Litoral Nordestino.</p> 
+            <br>
+           <p> Consideradas uma das maiores abelhas nativas do Brasil e a que produz mais mel, por isso são as mais procuradas.</p>
+
+    </div>
+
+    <div class="container">
+        <ul id="especies">
+            <li><img src="imagens/urucu/urucu1.jpg" alt="Banner 01"></li>
+            <li><img src="imagens/urucu/urucu2.jpg" alt="Banner 02"></li>
+            <li><img src="imagens/urucu/urucu3.jpg" alt="Banner 03"></li>
+        </ul>
+    </div>
+
+
+
+    <footer id="rodape">
+        <div class="container">
+
+            <p>UniRios - Centro Universitário do Rio São Francisco</p>
+
+
+            <p>Site construído na aula da disciplina de Introdução à Tecnologia à Tecnologia Web</p>
+
+            <p>Curso Sistema de Informação</p>
+
+            <p>1º périodo - Semestre 2022.2</p>
+
+            <p>Aluno: Ayslan Hugo Lucio dos Santos</p>
+
+        </div>
+    </footer>
+
+
+</body>
+</html>
