@@ -10,6 +10,14 @@
     text-align: center;
 }
 
+#cabecalho img{
+    max-width: 300px;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
 :root {
     --cor-1: #FFF2AD;
     --cor-2: #f5db59;
@@ -89,12 +97,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-#rodape p{
-    background-color: var(--cor-2);
-    padding: 10px;
-    text-align: center;
-}
-
 #menu ul {
     margin: 0;
     padding:0;
@@ -116,6 +118,26 @@ h1 {
     -moz-border-radius:5px;
     border-radius:5px;
 }
+
 #menu li a:hover {
     background: var(--cor-4);
+}
+
+#sub-especies{
+	display: none;
+    /* border: solid 1px black; */
+    position: absolute;
+    width: 600px;
+    left: 400px;
+    margin: 0 auto;
+}
+
+#list-especies:hover #sub-especies{
+    display: block;
+}
+
+#rodape p{
+    background-color: var(--cor-2);
+    padding: 10px;
+    text-align: center;
 }
